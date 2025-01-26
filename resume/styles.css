@@ -1,0 +1,203 @@
+/* Global Styles */
+body {
+  font-family: 'Times New Roman', Times, serif; /* Change font-family to Times New Roman */
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-size: 18px;
+}
+
+.container {
+  padding: 0;
+  width: 210mm;
+  height: 297mm;
+  max-width: 90%;
+  margin: 0 auto;
+  /* padding: 40px 20px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile h1 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 600;
+  font-style: normal;
+
+  font-size: 2em;
+  margin: 30px 0 10px 0;
+  color: #2c0000;
+}
+
+.content {
+  width: 100%;
+  background-color: #fff;
+  padding: 0 50px 0 50px;
+  /* border-radius: 10px; */
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); */
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0 0 10px 0;
+  color: #2c0000;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Item List Styles */
+.item-list li {
+  margin-bottom: 10px;
+}
+
+.item-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.item-title {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.item-year {
+  color: #666;
+}
+
+.item-location {
+  margin: 0 0 5px 0;
+  color: #666;
+  line-height: 1.3; /* Increase line height for better readability */
+}
+
+.item-overview {
+  line-height: 1.0;
+  color: #666;
+}
+
+/* Item Description Styles */
+.item-description {
+  margin-top: 10px;
+  /* color: #666; */
+  line-height: 1.3; /* Increase line height for better readability */
+}
+
+.item-description ul {
+  list-style-type: disc; /* Use disc bullets for unordered lists */
+  margin-left: 20px; /* Add indentation for bullet points */
+}
+
+.item-description li {
+  margin-bottom: 5px; /* Add space between list items */
+}
+
+/* Additional Styles */
+.extra-info {
+  color: #666;
+  margin: 10px 0 0 0;
+  /* margin-left: 10px; */
+}
+
+.extra-info span {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  margin: 0 10px 0 10px;
+}
+
+.underline {
+  border-bottom: 2px solid #9c0909;
+  /* display: inline-block; */
+  vertical-align: middle;
+}
+
+
+.publication {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.publication-content {
+  margin-left: 20px;
+  flex-grow: 1; /* Allow content to grow to fill available space */
+}
+
+.publication-conference {
+  font-style: italic;
+}
+
+
+.publication-link {
+  margin-left: 10px;
+  color: blue;
+  text-decoration: underline;
+}
+
+.reference-link {
+  font-size: 0.8em;
+  color: rgb(6, 195, 132);
+}
+
+.reference-link::before {
+  content: "[";
+  color: black;
+}
+
+.reference-link::after {
+  content: "]";
+  color: black;
+}
+
+/* Print Styles */
+@media print {
+  @page {
+    size: A4;
+    margin: 2cm 0 2cm 0;
+  }
+
+  body {
+    font-size: 12px;
+  }
+  
+} 
+
+@media (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+#publication {
+  text-align: justify;
+}
+
+.item-list {
+  text-align: justify;
+}
+
+#service-list {
+  text-align: justify;
+}
